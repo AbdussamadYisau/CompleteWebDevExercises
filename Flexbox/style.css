@@ -1,5 +1,6 @@
  body {
  	font-size: 62.5%;
+ 	margin: 0rem;
  }
 
 h1 {
@@ -9,7 +10,14 @@ h1 {
 	border-bottom: 0.125rem solid #888888;
 	border-right: 0.125rem solid #888888;
 	width: 20rem;
-	box-shadow:4px 4px 4px #888888;
+	/*The following lines of code makes sure box shadow works in a variety of browsers*/
+	-moz-box-shadow: 0.25rem 0.25rem 0.25rem #888888; /*Mozilla*/
+	-ms-box-shadow: 0.25rem 0.25rem 0.25rem #888888; /*Internet Explorer*/
+	-webkit-box-shadow: 0.25rem 0.25rem 0.25rem #888888; /*Safari and Chrome*/
+	-o-box-shadow: 0.25rem 0.25rem 0.25rem #888888; /*Opera*/
+	box-shadow: 0.25rem 0.25rem 0.25rem #888888;
+    /*This serves as a buffer for the header element*/
+	margin-top: 0.625rem;
 }
  .container {
  	display: flex; 
