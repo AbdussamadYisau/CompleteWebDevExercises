@@ -3,3 +3,4 @@ Herein, I will be posting the exercises I do as I progress through Andrei's Comp
 
 The list of topics herein are:
 # Flexbox - https://abdussamadyisau.github.io/CompleteWebDevExercises/Flexbox/
+# Grid - https://abdussamadyisau.github.io/CompleteWebDevExercises/Grid/
