@@ -1,26 +1,47 @@
-h1 {
-    text-align: center;
-    font-family: 'Saira Stencil One', cursive;
+body {
+    margin: auto 0;
 }
-
-.container{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns:repeat(auto-fill, minmax(200px,1fr)); 
-    grid-template-rows: 1fr; 
-
-}
-
- 
-
 
 .zone {
     cursor:pointer;
-    text-align: center;
-    font-size:10em;
+    color:#FFF;
+    font-size:2em;
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
+}
+/*Nav*/
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin:0;
+}
+
+@media only screen and (max-width: 700px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+li {
+    padding: 20px;
+}
+
+li > a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
+.push {
+    margin-left: auto;
 }
 
 .zone:hover {
@@ -30,7 +51,77 @@ h1 {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-transform:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    transform: :rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
 
+/*COVER*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height: 75vh;
+}
+.cover {
+    width: 30rem;
+}
+/*GRID*/
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+}
+
+/*Grid's images*/
+
+.box > img {
+   width: 100%;
+}
+
+.box {
+    background-color: #fff;
+    padding: 130px;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+
+footer  div>a {
+    color: inherit;
+}
+
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.circle{
+    border-radius: 50%;
+    margin: 0.15em;
+    font-size: 3em;
+    } 
+.fa-twitter{
+    background: #000;
+    color: #FFFFFF;
+    padding: 10px;
+    }
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
@@ -43,9 +134,6 @@ h1 {
     background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
     background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
-
-    grid-column: span 2;
-    grid-row: span 2;
 }
 
 /***********************************************************************
@@ -85,31 +173,4 @@ h1 {
     background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Purple Background
- **********************************************************************/
-.purple {
-    background: #A88BEB; /* Old browsers */
-    background: -moz-linear-gradient(top, #A88BEB 0%, #F1A7F1 44%, #F8CEEC 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A88BEB), color-stop(44%,#F1A7F1), color-stop(100%,#F8CEEC)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* IE10+ */
-    background: linear-gradient(top, #A88BEB 0%,#F1A7F1 44%,#F8CEEC 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Brown Background
- **********************************************************************/
-.brown {
-    background: #f6e6b4; /* Old browsers */
-    background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(100%,#ed9017)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* IE10+ */
-    background: linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
 }
