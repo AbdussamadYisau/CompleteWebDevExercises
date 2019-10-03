@@ -1,0 +1,24 @@
+Functions are blocks of code which perform one or more specific tasks.
+
+There are a couple of in-built functions that we already use a lot, eg
+alert() , prompt(), clear () etc
+
+
+The brackets, () mean that the functions are being called.
+
+alert("Hi there!") -> Hi there is an argument. Arguments are what are passed into the function.
+
+NB: Functions must be called before it can be used.
+
+function multiply(a,b) {
+ return("This is to multiply " + a + " and " + b + " ,which gives us: " + (a*b));
+
+}
+  multiply(5,6);
+// It works actually
+
+ - parameters vs arguments:
+So, parameters are the template inputs specified when qeiting a function. Whereas, arguments are the inputs passed into a function.
+
+There's a thin line there, and I hope you find it. 
+
