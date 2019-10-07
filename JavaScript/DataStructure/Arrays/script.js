@@ -9,3 +9,11 @@ var mixedList = [1,"tiger",function Name(){console.log('Ife');}]
 
 // console.log( mixedList, {'maxArrayLength': null} ); - Prints all entries in an array
 console.log(mixedList);
+
+var list = [["tiger", "cat", "bear", "bird"]];
+
+console.log(list[0][1]);
+
+// list.shift() returns "tiger", and the array is shifted to the left. So now, it only contains cat, bear and bird
+//list.pop() removes "bird", and the array is shifted to the right.
+
