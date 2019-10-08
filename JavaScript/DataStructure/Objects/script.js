@@ -1,11 +1,11 @@
 //Objects are collections of properties. An object is both a data structure and a JS type.
 
-var user = {
-	name: "John",
-	age: 34,
-	hobby: "Soccer",
-	isMarried: false,
-};
+// var user = {
+// 	name: "John",
+// 	age: 34,
+// 	hobby: "Soccer",
+// 	isMarried: false,
+// };
 
 //An Object is more dynamic than an array, cause it allows us to have properties and values.
 
@@ -17,37 +17,97 @@ var user = {
 
 //It is possible to put an array inside an object. Also possible to put a function.
 
-var user = {
-	name: "John",
-	age: 34,
-	hobby: "Soccer",
-	isMarried: false,
-	spells:["abracadbra", "boom!", "Shazam"],
-	shout: function() {
-		console.log("AHHHH");
-	}
-};
+// var user = {
+// 	name: "John",
+// 	age: 34,
+// 	hobby: "Soccer",
+// 	isMarried: false,
+// 	spells:["abracadbra", "boom!", "Shazam"],
+// 	shout: function() {
+// 		console.log("AHHHH");
+// 	}
+// };
+
+// A function inside an object is a method.
 
 //How to access an array in an object
 
-console.log(user.spells[1]); //Returns boom!
-console.log(user.spells.slice(0,-1)); //Returns all the spells
-console.log(user.shout()); //Accesses the function
+// console.log(user.spells[1]); //Returns boom!
+// console.log(user.spells.slice(0,-1)); //Returns all the spells
+// console.log(user.shout()); //Accesses the function
 
 //It is also possible to put objects in arrays
 
-var list = [
-    {
-       username: "andy",
-       passowrd: "secre"
+// var list = [
+//     {
+//        username: "andy",
+//        passowrd: "secre"
  
-    },
+//     },
 
-    {
-       username: "jess",
-       passowrd: "shantelle"
+//     {
+//        username: "jess",
+//        passowrd: "shantelle"
  
-    }
+//     }
+// ];
+
+// console.log(list[0].username); // Returns Andy
+
+
+
+// Create an object and an array which we will use in our facebook exercise. 
+
+// 1. Create an object that has properties "username" and "password". Fill those values in with strings.
+      
+
+// 2. Create an array which contains the object you have made above and name the array "database".
+        var database = [
+                {
+                    username: "Ifeoluwa Daranijo",
+        		    password: "PWD",
+                },
+
+                {
+                    username: "Sean Tizzle",
+        		    password: "weight",
+                },
+
+                 {
+                    username: "Abdussalam",
+        		    password: "Chill",
+                },
+
+        ];
+// 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".
+var newsFeed = [
+
+        {
+        	username: "Mauruf Kilonipekun",
+        	timeline: "wassup, homies?",
+        },
+
+        {
+        	username:"Adigun" ,
+        	timeline:"Kilo n sele gangan?",
+        },
+
+        {
+        	username:"Ifunanya",
+        	timeline: "Kilo n sele gangan?",
+        },
 ];
 
-console.log(list[0].username); // Returns Andy
+var userNamePrompt = prompt("What's your username?");
+var passwordPrompt = prompt("What's your password?");
+
+function signIn(user, pass) {
+	if (user === database[2].username  && pass === database[2].password) {
+		console.log(newsFeed);
+	} else {
+		alert("Sorry, wrong username and password");
+	}
+
+}
+
+signIn(userNamePrompt, passwordPrompt);
