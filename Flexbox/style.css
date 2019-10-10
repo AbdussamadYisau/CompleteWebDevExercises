@@ -3,6 +3,31 @@
  	margin: 0rem;
  }
 
+
+	body.dark-mode {
+	  background-color: #111;
+	  color: #eee;
+	}
+	body.dark-mode a {
+	  color: #111;
+	}
+	body.dark-mode button {
+	  background-color: #eee;
+	  color: #111;
+	}
+	body.light-mode {
+	  background-color: #eee;
+	  color: #111;
+	}
+	body.light-mode a {
+	  color: #111;
+	}
+	body.light-mode button {
+	  background-color: #111;
+	  color: #eee;
+	}
+
+
 h1 {
 	text-align: center;
 	font-family: fantasy;
@@ -18,6 +43,12 @@ h1 {
 	box-shadow: 0.25rem 0.25rem 0.25rem #888888;
     /*This serves as a buffer for the header element*/
 	margin-top: 0.625rem;
+	display: inline-block;
+}
+
+button {
+	margin-top: 0.625rem;
+	float: right;
 }
  .container {
  	display: flex; 
