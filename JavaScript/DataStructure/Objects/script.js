@@ -62,52 +62,120 @@
       
 
 // 2. Create an array which contains the object you have made above and name the array "database".
-        var database = [
-                {
-                    username: "Ifeoluwa Daranijo",
-        		    password: "PWD",
-                },
+        // var database = [
+        //         {
+        //             username: "Ifeoluwa Daranijo",
+        // 		    password: "PWD",
+        //         },
 
-                {
-                    username: "Sean Tizzle",
-        		    password: "weight",
-                },
+        //         {
+        //             username: "Sean Tizzle",
+        // 		    password: "weight",
+        //         },
 
-                 {
-                    username: "Abdussalam",
-        		    password: "Chill",
-                },
+        //          {
+        //             username: "Abdussalam",
+        // 		    password: "Chill",
+        //         }
 
-        ];
+        // ];
 // 3. Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".
-var newsFeed = [
+// var newsFeed = [
 
-        {
-        	username: "Mauruf Kilonipekun",
-        	timeline: "wassup, homies?",
-        },
+//         {
+//         	username: "Mauruf Kilonipekun",
+//         	timeline: "wassup, homies?",
+//         },
 
-        {
-        	username:"Adigun" ,
-        	timeline:"Kilo n sele gangan?",
-        },
+//         {
+//         	username:"Adigun" ,
+//         	timeline:"Kilo n sele gangan?",
+//         },
 
-        {
-        	username:"Ifunanya",
-        	timeline: "Kilo n sele gangan?",
-        },
+//         {
+//         	username:"Ifunanya",
+//         	timeline: "Kilo n sele gangan?",
+//         },
+// ];
+
+var todos = [
+   "clean room", 
+   "brush teeth",
+   "exercise",
+   "study javascript", 
+   "eat healthy"
+
 ];
 
-var userNamePrompt = prompt("What's your username?");
-var passwordPrompt = prompt("What's your password?");
+var todosImportant = [
+   "clean room!", 
+   "brush teeth!",
+   "exercise!",
+   "study javascript!", 
+   "eat healthy!"
 
-function signIn(user, pass) {
-	if (user === database[2].username  && pass === database[2].password) {
-		console.log(newsFeed);
-	} else {
-		alert("Sorry, wrong username and password");
-	}
+];
 
+ var todosLength = todos.length;
+// THE FOR LOOP
+// for (var i = 0; i < todosLength; i++) {
+// 	todos.pop();
+// } - this returns an empty array
+
+// for (var i = 0; i < todos.length; i++) {
+// 	todos.pop();
+// } - this returns only the first two elements. 
+
+// THE WHILE LOOP
+// var counter = 10;
+// while(counter>0) {
+// 	console.log(counter);
+// 	counter--;
+// }
+
+// THE DO WHILE LOOP
+
+// var counterTwo = 10;
+
+// do {
+// 	console.log("DO WHILE", counterTwo);
+// 	counterTwo--;
+
+// } while(counterTwo > 10);
+
+
+// THE forEach
+
+//  todos.forEach(function(i) {
+//  	console.log(i);
+// })
+
+
+function logTodos(todo,i) {
+	console.log(todo,i);
 }
 
-signIn(userNamePrompt, passwordPrompt);
+todos.forEach(logTodos);
+
+
+todosImportant.forEach(logTodos);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
