@@ -98,23 +98,23 @@
 //         },
 // ];
 
-var todos = [
-   "clean room", 
-   "brush teeth",
-   "exercise",
-   "study javascript", 
-   "eat healthy"
+// var todos = [
+//    "clean room", 
+//    "brush teeth",
+//    "exercise",
+//    "study javascript", 
+//    "eat healthy"
 
-];
+// ];
 
-var todosImportant = [
-   "clean room!", 
-   "brush teeth!",
-   "exercise!",
-   "study javascript!", 
-   "eat healthy!"
+// var todosImportant = [
+//    "clean room!", 
+//    "brush teeth!",
+//    "exercise!",
+//    "study javascript!", 
+//    "eat healthy!"
 
-];
+// ];
 
  var todosLength = todos.length;
 // THE FOR LOOP
@@ -151,14 +151,14 @@ var todosImportant = [
 // })
 
 
-function logTodos(todo,i) {
-	console.log(todo,i);
-}
+// function logTodos(todo,i) {
+// 	console.log(todo,i);
+// }
 
-todos.forEach(logTodos);
+// todos.forEach(logTodos);
 
 
-todosImportant.forEach(logTodos);
+// todosImportant.forEach(logTodos);
 
 
 
