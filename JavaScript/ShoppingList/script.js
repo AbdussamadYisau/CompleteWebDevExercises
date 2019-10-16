@@ -18,9 +18,11 @@
 
  	var li = document.createElement("li");
     li.appendChild(document.createTextNode(input.value));
+     li.classList.add("roundedCorners");
+
     ul.appendChild(li);
 
-    //This allows the inout field to be empty after a new task has been entered
+    //This allows the input field to be empty after a new task has been entered
 
     input.value = "";
 

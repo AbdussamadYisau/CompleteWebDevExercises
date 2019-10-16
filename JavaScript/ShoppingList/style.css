@@ -60,7 +60,7 @@ input:hover {
 /* responsive mobile */
 @media (max-width: 991.5px) {
   input {
-    width: 100%;
+    width: 70%;
     }
 }
 #enter {
@@ -75,13 +75,24 @@ input:hover {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
-  margin-top: 2px;
+  margin-top: 5px;
   padding: 5px;
   transition: background-color 1s;
 }
 
 .done {
 	text-decoration: line-through;
+}
+
+/*ul {
+  display: flex;
+  justify-content: center;
+}*/
+
+li {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 /*For the done button*/
 .strike {
@@ -93,5 +104,18 @@ input:hover {
 }
 
 button {
-	margin: 5px;
+	margin: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.roundedCorners {
+  border-radius: 25px;
+  background: black;
+  color: white;
+  padding: 15px; 
+  width: 175px;
+  height: 25px;
+  margin-right: 20px;  
 }
