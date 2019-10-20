@@ -5,12 +5,11 @@ var body = document.getElementById("gradient");
 var copButton = document.querySelector(".copyTextButton");
 
 function setGradient() {
-	body.style.background =
-	 "linear-gradient(to right, "+ color1.value + ","+ color2.value+")";
+	body.style.background = "linear-gradient(to right, "+ color1.value + ","+ color2.value+")";
     copButton.style.background =  "linear-gradient(to right, "+ color1.value + ","+ color2.value+")";
 
       // Tells us the colors we choose
-      css.textContent = body.style.background  + ";";
+      css.textContent = "background: " + body.style.background  + ";";
 
 }
 
@@ -32,3 +31,4 @@ function copText() {
   alert("Copied the text: " + hiddenField.value);
 
 }
+
