@@ -10,4 +10,4 @@ const first = () => {
 
 const newFunc = first();
 
-newFunc();
+newFunc(); // This is basically saying that newFunc() === first()() . Mad o
