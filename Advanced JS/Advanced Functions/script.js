@@ -69,7 +69,7 @@ console.log("Using compose",compose(f,g)(20));
 
 
 // Avoiding side effects and functional purity whilst using functions
-// Functional purity is the thinking of avoiding side effects and always returning a value.
+// Functional purity is the thinking of avoiding side effects and always returning a value. It's a deterministic way of doing stuff.
 
 
 
