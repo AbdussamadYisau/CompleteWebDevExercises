@@ -59,3 +59,17 @@ const greeting = (a) => (b) => {
 
 let hello = greeting('Hello');
 hello('Abdsamad');
+
+// Compose - is the act of forming a function which comprises of two  functions together. From the two functions, the output of one function is the input of the other. 
+const compose = (f,g) => x => f(g(x));
+const g = n => n + 1;
+const f = n => n * 2;
+
+console.log("Using compose",compose(f,g)(20));
+
+
+// Avoiding side effects and functional purity whilst using functions
+// Functional purity is the thinking of avoiding side effects and always returning a value.
+
+
+
