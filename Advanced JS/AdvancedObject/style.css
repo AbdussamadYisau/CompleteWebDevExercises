@@ -1,3 +1,12 @@
 * {
 	font-size: 62.5%;
 }
+
+h1 {
+	font-size: 15em;
+    font-weight: bold;
+}
+
+span {
+	text-decoration: line-through;
+}
