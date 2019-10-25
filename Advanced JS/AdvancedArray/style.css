@@ -1,0 +1,13 @@
+* {
+	font-size: 62.5%;
+	margin: auto 0;
+}
+
+body {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 15em;
+}
+
+h1 {
+	text-align: center;
+}
