@@ -94,7 +94,7 @@ console.log("newArray", newNumArray);
 const answer = player.map(user => {
 
   let {items} = user;
-  items = items.map(item => {
+  user.items = items.map(item => {
     return (item + "!");
   });
   return user;
