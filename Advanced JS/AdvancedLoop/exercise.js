@@ -86,6 +86,10 @@ function checkBasket(basket, lookingFor) {
      return `What you're looking for isn't in this basket`;
 }
 
+// const checkBasket =(basket, lookingFor) => 
+
+//   lookingFor in basket ? `${lookingFor} is in the basket` : `What you're looking for isn't in the basket`;
+
 checkBasket(amazonBasket, "glasses");
 
 
