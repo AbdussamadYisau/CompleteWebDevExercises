@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>How Does Javascript Work?</title>
+</head>
+<body>
+
+<!-- What is a program?
+    - It allocates memory (i.e stores variables)
+    - parse and execute (i.e read and run commands)
+
+ -->
+
+ <!-- Javascript Engines - they read the javascript and change it into machine code for the brwser.
+
+    For Chrome, it's the V8 Engine.
+    For Firefox, it's SpiderMonkey.
+    For Edge, it's Chakra.
+
+    The Engine consists of Memory Heap and Call Stack.
+
+    Memory Heap - where memory allocation happens.
+    Call Stack - where code is read and executed.
+
+
+   -->
+
+   <!-- Javascript is a single threaded language, explain.
+
+     That means it has only one call stack, that is you can only do one thing at a time.  With a call stack, it reads and execute from top-to-bottom. Once the first is executed, it is removed and so on. 
+    -->
+
+    <!-- 
+        Synchronous programming means line one gets executed, then line two gets executed and then line three gets executed and so on. The latter can't start before the former finishes.
+
+     -->
+     <!-- 
+         A stack overflow is when you've used up more memory for the stack than your program was supposed to use. In embedded systems you might only have 256 bytes for the stack, and if each function takes up 32 bytes then you can only have function calls 8 deep - function 1 calls function 2 who calls function 3 who calls function 4 .... who calls function 8 who calls function 9, but function 9 overwrites memory outside the stack. This might overwrite memory, code, etc. - From Stack Overflow
+      -->
+
+      <!-- JavaScript is a language that can be non-blocking, explain.
+
+           Say, you want to console.log three different things and that the second thing is a massive array which you want to loop through. Now it is obvious that the second console.log would take a lot of time, and hold up the third console.log and this isn't proper. 
+         
+
+
+       -->
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
