@@ -44,8 +44,6 @@ h1 {
     background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
     background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
 
-    grid-column: span 2;
-    grid-row: span 2;
 }
 
 /***********************************************************************
