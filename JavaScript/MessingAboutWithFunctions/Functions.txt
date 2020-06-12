@@ -10,6 +10,21 @@ alert("Hi there!") -> Hi there is an argument. Arguments are what are passed int
 
 NB: Functions must be called before it can be used.
 
+Two ways of creating a function: 
+1) function sayHello() {
+  console.log("Hellooo");
+}
+
+sayHello()
+
+2) Function Expression. This function does not have a name, it is called an anonymous function.
+
+var sayBye = function() {
+  console.log("Bye")
+}
+
+sayBye()
+   
 function multiply(a,b) {
  return("This is to multiply " + a + " and " + b + " ,which gives us: " + (a*b));
 
@@ -18,7 +33,19 @@ function multiply(a,b) {
 // It works actually
 
  - parameters vs arguments:
-So, parameters are the template inputs specified when qeiting a function. Whereas, arguments are the inputs passed into a function.
+So, parameters are the template inputs specified when calling a function. Whereas, arguments are the inputs passed into a function.
 
 There's a thin line there, and I hope you find it. 
 
+
+function checkDriverAge() {
+  var age = prompt("What is your age?");
+
+  if (Number(age) < 18) {
+    alert("Sorry, you are too yound to drive this car. Powering off");
+  } else if (Number(age) > 18) {
+    alert("Powering On. Enjoy the ride!");
+  } else if (Number(age) === 18) {
+    alert("Congratulations on your first year of driving. Enjoy the ride!");
+  }
+}
