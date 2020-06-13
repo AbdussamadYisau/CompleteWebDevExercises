@@ -11,7 +11,7 @@
 
 //How to access values/elements in an object? Use the name of the object and the property whose value you want eg: user.name will return John
 
-//How to add properties to an already declared object? Simple. Say you want t add a user's favourite food, just say: user.favoriteFood = "Spinach"
+//How to add properties to an already declared object? Simple. Say you want to add a user's favourite food, just say: user.favoriteFood = "Spinach"
 
 //The value of an already declared property can be upgraded/changed, eg user.isMarried = "True" - This is why a const object can be upgraded.
 
