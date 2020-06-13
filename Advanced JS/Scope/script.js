@@ -23,3 +23,6 @@ function funnestFunction() {
 }
 
 console.log("window: ",fun);
+funFunction();
+funnerFunction();
+funnestFunction();
