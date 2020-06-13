@@ -37,9 +37,9 @@ var newsfeed = [
 
 ];
 
-function isUserValid(username, password) {
+function isUserValid(user, pass) {
 	 for(var i = 0; i < database.length; i++) {
-		if(database[i].username === username  && database[i].password === password) {
+		if(database[i].username === user  && database[i].password === pass) {
 
 			return true;
 		}

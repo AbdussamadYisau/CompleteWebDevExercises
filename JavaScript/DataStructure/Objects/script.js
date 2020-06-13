@@ -141,7 +141,7 @@
 // 	console.log("DO WHILE", counterTwo);
 // 	counterTwo--;
 
-// } while(counterTwo > 10);
+// } while(counterTwo > 0);
 
 
 // THE forEach
