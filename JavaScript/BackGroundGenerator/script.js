@@ -5,11 +5,11 @@ var body = document.getElementById("gradient");
 var copButton = document.querySelector(".copyTextButton");
 
 function setGradient() {
-	body.style.background = "linear-gradient(to right, "+ color1.value + ","+ color2.value+")";
-    copButton.style.background =  "linear-gradient(to right, "+ color1.value + ","+ color2.value+")";
+	body.style.background = `linear-gradient(to right, ${color1.value},${color2.value})`;
+  copButton.style.background =  `linear-gradient(to right, ${color1.value},${color2.value})`;
 
-      // Tells us the colors we choose
-      css.textContent = "background: " + body.style.background  + ";";
+  // Tells us the colors we choose
+  css.textContent = `background: ${body.style.background};`;
 
 }
 
