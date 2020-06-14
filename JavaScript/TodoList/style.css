@@ -6,7 +6,7 @@ body {
 .main {
 	margin: auto;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Bangers', cursive;
 }
 
@@ -16,6 +16,9 @@ h1 {
 	margin-bottom: 0;
 }
 
+.signifyDone {
+  font-size: 15px;
+}
 /* 3 borders color after h1 */
 div.borderBottom {
   margin: 0 auto;
@@ -60,63 +63,57 @@ input:hover {
 /* responsive mobile */
 @media (max-width: 991.5px) {
   input {
-    width: 70%;
+    width: 50%;
     }
+ 
 }
 #enter {
   cursor: pointer;
   border-radius: 5px;
   font-size: 0.5em;
-  display: block;
-  margin: 0 auto;
-  width: 10%;
+  /* margin: 0 auto; */
+  width: 100px;
   background-color: black;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
-  margin-top: 5px;
-  padding: 5px;
+  padding: 10px;
   transition: background-color 1s;
 }
 
 .done {
-	text-decoration: line-through;
+   text-decoration: line-through;
+ 
 }
-
-/*ul {
-  display: flex;
-  justify-content: center;
-}*/
 
 li {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-/*For the done button*/
-.strike {
-   cursor: pointer;
-   border-radius: 5px;
-   background-color: black;
-   color: white;
-   padding: 2px;
-}
-
-button {
-	margin: 20px;
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-.roundedCorners {
-  border-radius: 25px;
+  list-style: none;
+  padding: 12px 15px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 90%;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 10px;
   background: black;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5 ease;
+}
+
+li:hover {
+  background: #636262;
+}
+
+li > button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  float: right;
   color: white;
-  padding: 15px; 
-  width: 250px;
-  height: 50px;
-  margin-right: 20px;  
-  text-align: center;
+  font-weight: 800;
 }

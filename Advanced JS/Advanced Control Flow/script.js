@@ -1,10 +1,10 @@
-// function isUserValid(bool) {
-// 	// body...
+function isUserValid(bool) {
+	// body...
 
-// 	return bool;
-// }
+	return bool;
+}
 
-// var answer = isUserValid(true) ? "You may enter" : "You shall not pass";
+var answer = isUserValid(true) ? "You may enter" : "You shall not pass";
 
 function moveCommand(direction) {
 	// body...

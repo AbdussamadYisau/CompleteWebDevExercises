@@ -17,19 +17,19 @@ newFunc(); // This is basically saying that newFunc() === first()() . Mad o
 
 //     const greet = "Hi";
 
-// 	const second = () => {
+//	   const second = () => {
 
 
-    
+		
 
 
-// 		const third = () => {
+//	 		const third = () => {
 
-//             alert(greet);
-          
-//          }
+//	             alert(greet);
+			
+//	          }
 
-//       return third;
+//	       return third;
 // 	}
 
 //  return second;

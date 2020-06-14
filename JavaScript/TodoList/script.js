@@ -1,13 +1,14 @@
- var button = document.getElementById("enter");
- var input = document.getElementById("user-input");
- var ul = document.querySelector("ul");
+ let button = document.getElementById("enter");
+ let input = document.getElementById("user-input");
+ let ul = document.querySelector("ul");
 
  function inputLength() {
  	return (input.value.length);
  }
 
- function underlineParent(event) {
- 	event.target.parentNode.classList.toggle("done");
+ function underlineParent() {
+    event.target.parentNode.classList.toggle("done");
+
  }
 
  function removeParent(event) {
@@ -16,28 +17,16 @@
 
  function createListElement() {
 
- 	var li = document.createElement("li");
-    li.appendChild(document.createTextNode(input.value));
-     li.classList.add("roundedCorners");
+ 	let li = document.createElement("li");
+   li.appendChild(document.createTextNode(input.value));
+   ul.appendChild(li);
 
-    ul.appendChild(li);
+   //This allows the input field to be empty after a new task has been entered
 
-    //This allows the input field to be empty after a new task has been entered
+   input.value = "";
 
-    input.value = "";
-
-
-    //Create the toggle button for done
-   
-    var toggleDone = document.createElement("button");
-
-    toggleDone.appendChild(document.createTextNode("Done"));
-
-     toggleDone.classList.add("strike");
-
-    li.appendChild(toggleDone);
-
-     toggleDone.addEventListener("click", underlineParent);
+   // Action to strike through task when completed
+   li.addEventListener("click", underlineParent);
      
 
 
@@ -45,17 +34,14 @@
 
     //Create the delete button
    
-    var delButton = document.createElement("button");
+    let delButton = document.createElement("button");
 
     delButton.appendChild(document.createTextNode("Delete"));
-
-    delButton.classList.add()
-
     li.appendChild(delButton);
 
     delButton.addEventListener("click", removeParent);
 
-    // delButton.onclick = removeParent;
+    
 
   
  } 
