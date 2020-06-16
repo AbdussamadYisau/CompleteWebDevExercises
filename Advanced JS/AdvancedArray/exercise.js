@@ -32,7 +32,7 @@ const player = [
 const playerUsername = [];
 
 const newUsername = player.forEach((user) => {
-      let {username} = user;
+      let {username} = user; // Destructuring
       username = username + "!";
 
        playerUsername.push(username);
@@ -54,7 +54,7 @@ console.log("Mapped Array: ", mapPlayer); // Mapped Array:  (4) ["john!", "beck
 //Filter the array to only include users who are on team: red
 
 const filterPlayer = player.filter((user) => {
-   let {username, team} = user;
+   let {team} = user;
    
     return (team === "red");
 

@@ -43,7 +43,7 @@ const array1 = [1, 2, 3, 4];
 // console.log(array1.reduce(reducer, 5));
 // // expected output: 15
 
-const reduceArray = array.reduce((accumulator, num)=> {return (accumulator + num)},5)
+const reduceArray  = array.reduce((accumulator, num)=> {return (accumulator + num)},5)
 
 console.log("reduce", reduceArray);
 

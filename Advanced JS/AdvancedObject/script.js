@@ -19,11 +19,20 @@ object1 === object3; // false, why? Makes sense because if the value of object1 
 const object4 = {
 	a:  function() {
 	  	// body...
-	  	console.log(this);
+	  	console.log(this === object4);
 	  }
 
 }
 
+const object4a = {
+	a:  function() {
+	  	// body...
+	  	console.log(this);
+	  }
+
+}
+console.log(object4.a()); // True because the object we are currently in is this object 4
+console.log(object4a.a()); // Returns the object4a cause that's the object we are currently in.
 
 // Instantiation - is when you make a copy of an object and reuse the code.
 class Player {
@@ -50,7 +59,12 @@ class Wizard extends Player {
 }
 
 const wizard1 = new Wizard("Shelly", "Healer");
-const wizard2 = new Wizard("Shawn", "Dark Magic");
+console.log(wizard1.introduce());
+console.log(wizard1.play());
+const wizard2 = new Wizard("Shawn", "Practicer of the dark arts");
+
+console.log(wizard2.introduce());
+console.log(wizard2.play());
 
 
 

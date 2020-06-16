@@ -34,7 +34,7 @@ let obj = {
 } 
 
 
-Object.keys(obj).forEach((key, index) => {
+Object.keys(obj).forEach((key, _index) => {
 	console.log(key, obj[key]);
 })
 
@@ -48,10 +48,14 @@ Object.entries(obj).forEach(value => {
 	console.log(value); // returns property and value
 })
 
+//Regular concatenation
 Object.entries(obj).map(value => {
 	return (value[0].replace("username", " ") + " : " + value[1]); // returns  [" 0 : Santa", " 1 : Rudolf", " 2 : Mr. Grinch"]
 })
 
-// Async Await
+// Using Template Strings
+Object.entries(obj).map(value => {
+	return (`${value[0].replace("username", " ")}  :  ${value[1]}`); 
+})
 
 
