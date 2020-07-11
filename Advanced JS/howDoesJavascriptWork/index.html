@@ -36,7 +36,11 @@
 
      -->
      <!-- 
-         A stack overflow is when you've used up more memory for the stack than your program was supposed to use. In embedded systems you might only have 256 bytes for the stack, and if each function takes up 32 bytes then you can only have function calls 8 deep - function 1 calls function 2 who calls function 3 who calls function 4 .... who calls function 8 who calls function 9, but function 9 overwrites memory outside the stack. This might overwrite memory, code, etc. - From Stack Overflow
+         A stack overflow is when you've used up more memory for the stack than your program was supposed to use. 
+         In embedded systems you might only have 256 bytes for the stack,
+        and if each function takes up 32 bytes then you can only have function calls 8 deep 
+        - function 1 calls function 2 who calls function 3 who calls function 4 .... who calls function 8 who calls function 9, but function 9 overwrites memory outside the stack. 
+        This might overwrite memory, code, etc. - From Stack Overflow
       -->
 
       <!-- JavaScript is a language that can be non-blocking, explain.
